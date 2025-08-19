@@ -80,5 +80,3 @@ python your_script_name.py
 
 ---
 
-Do you want me to also include a **`requirements.txt`** example inside the README so users can just run `pip install -r requirements.txt` instead of typing everything manually?
-
