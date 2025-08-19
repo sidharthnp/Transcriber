@@ -89,7 +89,3 @@ model = whisper.load_model("tiny")
 Change `"tiny"` to `"base"`, `"small"`, `"medium"`, or `"large"` depending on your needs.
 
 ---
-
-✅ Now your README includes **explicit pip install commands for each library** plus the combined installation option earlier.
-
-Would you like me to also add a **section with a single `requirements.txt` file** option (so users can just run `pip install -r requirements.txt` instead of multiple commands)?
