@@ -1,40 +1,39 @@
-###   So, what I want you to do is that whoever is accessing these files, please make sure that you run the transcriber.py file and also the necessary libraries that have been imported has to be installed using PIP commands.   ###
+Perfect 👍 Let me give you a **complete, polished `README.md`** that you can directly drop into your repository.
 
-So, basically what this transcriber.py does is that it makes use of the Whisper model and does the transcription by recording the audio snippet when you click on the start recording and once you click stop recording the data will give transcribe. By default it will be a "tiny" model which you can change into base model and necessary modifications or want can be done to the transcriber.py so that they can develop their own customized transcriber models.
-
-Perfect 👍 A **README.md** file is exactly the right place to document installation instructions.
-Here’s a clean version you can directly use:
+I’ve corrected the code block formatting, removed invalid commands, and made the flow clean and professional.
 
 ---
 
 # 🎙️ Whisper Transcriber
 
-This project provides a simple GUI for recording audio, transcribing it in real-time using **OpenAI Whisper**, and copying the transcribed text easily.
+This project provides a simple **GUI-based speech-to-text transcriber** using **OpenAI Whisper**.
+You can record audio snippets, transcribe them, and copy the text easily.
+
+By default, it uses the **Whisper Tiny** model (fast and lightweight).
+You can switch to the **Base** (or larger) models by editing `transcriber.py`.
 
 ---
 
 ## 📦 Prerequisites
 
-Before running the code, make sure you have the following installed:
-
 ### 1. Python
 
 * Version: **Python 3.8 or higher**
-* You can check your version with:
+* Check your version:
 
-  ```bash
-  python --version
-  ```
+```bash
+python --version
+```
 
 ### 2. Required Python Packages
 
-Install the dependencies using `pip`:
+Install dependencies with `pip`:
 
 ```bash
 pip install sounddevice numpy openai-whisper torch pyperclip
 ```
 
-👉 For Linux users: You may also need `tkinter` separately:
+👉 For Linux users, you may also need **tkinter** (not installed via `pip`):
 
 ```bash
 sudo apt-get install python3-tk
@@ -44,43 +43,53 @@ sudo apt-get install python3-tk
 
 ## 📚 Library Details
 
-Here’s what each library is used for:
-
-* **tkinter** → GUI framework (usually comes pre-installed with Python, install via system package manager if missing)
+* **tkinter** → GUI framework (comes pre-installed with Python, or install via system package manager if missing)
 * **sounddevice** → Recording audio from your microphone
 * **numpy** → Handling audio data arrays
-* **whisper** → Speech-to-text model (OpenAI Whisper)
+* **whisper** → OpenAI Whisper model for transcription
 * **torch** → PyTorch backend required for Whisper (uses GPU if available)
 * **pyperclip** → Copying text to clipboard
 
-
-```bash
-pip install sounddevice
-pip install numpy
-pip install openai-whisper
-pip install torch (please use the CUDA supported version)
-pip install pyperclip
 ---
-```bash
+
 ## ⚡ GPU Support (Optional but Recommended)
 
-If you have an NVIDIA GPU and want to use it for faster transcription:
+If you have an NVIDIA GPU, install the **CUDA-supported version of PyTorch** for faster transcription.
 
-1. Visit [PyTorch Installation Guide](https://pytorch.org/get-started/locally/).
-2. Choose your CUDA version and run the suggested `pip` install command.
+1. Visit the [PyTorch Installation Guide](https://pytorch.org/get-started/locally/).
+2. Select your system settings and run the recommended install command.
 
-Example (for CUDA 11.8):
+Example (for **CUDA 11.8**):
 
+```bash
 pip install torch --index-url https://download.pytorch.org/whl/cu118
 ```
+
+---
 
 ## 🚀 Running the Program
 
 Once dependencies are installed, run:
 
 ```bash
-python your_script_name.py
+python transcriber.py
 ```
 
 ---
 
+## 🛠️ Customization
+
+* Default model = `"tiny"`
+* You can switch models by editing the following line in `transcriber.py`:
+
+```python
+model = whisper.load_model("tiny")
+```
+
+Change `"tiny"` to `"base"`, `"small"`, `"medium"`, or `"large"` depending on your needs.
+
+---
+
+✅ This version is clean, copy-paste safe, and renders perfectly on GitHub.
+
+Do you also want me to add a **screenshot/example image** section (e.g., showing the GUI) so your README looks more professional?
