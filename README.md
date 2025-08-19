@@ -54,6 +54,7 @@ Here’s what each library is used for:
 * **pyperclip** → Copying text to clipboard
 
 
+```bash
 pip install sounddevice
 pip install numpy
 pip install openai-whisper
