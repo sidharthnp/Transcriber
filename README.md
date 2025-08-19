@@ -60,9 +60,8 @@ pip install numpy
 pip install openai-whisper
 pip install torch (please use the CUDA supported version)
 pip install pyperclip
-
 ---
-
+```bash
 ## ⚡ GPU Support (Optional but Recommended)
 
 If you have an NVIDIA GPU and want to use it for faster transcription:
@@ -72,7 +71,6 @@ If you have an NVIDIA GPU and want to use it for faster transcription:
 
 Example (for CUDA 11.8):
 
-```bash
 pip install torch --index-url https://download.pytorch.org/whl/cu118
 ```
 
