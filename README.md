@@ -76,8 +76,6 @@ Example (for CUDA 11.8):
 pip install torch --index-url https://download.pytorch.org/whl/cu118
 ```
 
----
-
 ## 🚀 Running the Program
 
 Once dependencies are installed, run:
