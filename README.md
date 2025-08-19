@@ -7,7 +7,7 @@ Here’s a clean version you can directly use:
 
 ---
 
-# 🎙️ Whisper Transcriber with SwishFormer Support
+# 🎙️ Whisper Transcriber
 
 This project provides a simple GUI for recording audio, transcribing it in real-time using **OpenAI Whisper**, and copying the transcribed text easily.
 
@@ -52,6 +52,13 @@ Here’s what each library is used for:
 * **whisper** → Speech-to-text model (OpenAI Whisper)
 * **torch** → PyTorch backend required for Whisper (uses GPU if available)
 * **pyperclip** → Copying text to clipboard
+
+
+pip install sounddevice
+pip install numpy
+pip install openai-whisper
+pip install torch (please use the CUDA supported version)
+pip install pyperclip
 
 ---
 
