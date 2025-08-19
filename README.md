@@ -1,7 +1,3 @@
-Got it 👍 — let’s make the **README.md** more explicit so that anyone can just copy the `pip` statements and install each library directly.
-
-Here’s the **final polished version**:
-
 ---
 
 # 🎙️ Whisper Transcriber
